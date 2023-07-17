@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Ortelli Inmobiliaria</title>
-    <link rel="icon" href="/2_pagina_de_practica/assets/images/favicon.png" type="image/favicon.png">
-    <link rel="stylesheet" href="style--prueba.css">
+    <link rel="icon" href="/proyecto_integrador_untref/assets/images/favicon.png" type="image/favicon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <header class="header">
-
-        <img class="bg" src="/2_pagina_de_practica/assets/images/1_inicio/1_banner_principal.jpg" alt="1_banner_principal">
-    
+        <img class="bg" src="/proyecto_integrador_untref/assets/images/1_banner_principal.jpg" alt="banner principal">
         <div class="menu container">
-            <a><img class="logo" src="/2_pagina_de_practica/assets/images/favicon.png" alt="Favicon"></a> 
+            <a><img class="logo" src="/proyecto_integrador_untref/assets/images/favicon.png" alt="favicon"></a> 
             <input type="checkbox" id="menu">
-            <label for="menu"><img src="/2_pagina_de_practica/assets/images/menu.png" class="menu-icono" alt="menu"></label>
+            <label for="menu"><img src="/proyecto_integrador_untref/assets/images/menu.png" class="menu-icono" alt="menu"></label>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#Propiedades">Propiedades</a></li>
-                    <li><a href="#Tasaciones">Tasaciones</a></li>
-                    <li><a href="#Quiénes Somos">Quiénes Somos</a></li>
-                    <li><a href="#Contacto">Contacto</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                    <li><a href="#tasaciones">Tasaciones</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -38,98 +36,121 @@
         </div>
     </header>
 
-    <section class="info container">
-
-        <div class="info-1">
-            <img src="/2_pagina_de_practica/assets/icon/servicios/1_venta.jpg" alt="Venta">
-            <h3>Venta</h3>
-            <p>Vendemos tu inmueble al mejor valor del mercado.</p>
-        </div>
-
-        <div class="info-1">
-            <img src="/2_pagina_de_practica/assets/icon/servicios/2_alquiler.jpg" alt="Alquiler">
-            <h3>Alquiler</h3>
-            <p>Alquilamos inmuebles y asesoramos a las partes según la ley vigente.</p>
-        </div>
-
-        <div class="info-1">
-            <img src="/2_pagina_de_practica/assets/icon/servicios/3_permuta.jpg" alt="Venta">
-            <h3>Permuta</h3>
-            <p>Acordamos entre las partes para el intercambio para el intercambio de propiedades.</p>
-        </div>
-
-        <div class="info-1">
-            <img src="/2_pagina_de_practica/assets/icon/servicios/4_tasaciones.jpg" alt="Venta">
-            <h3>Tasaciones</h3>
-            <p>Servicio profesional de tasación de inmuebles urbanos y rurales.</p>
-        </div>
-        
-        <div class="info-1">
-            <img src="/2_pagina_de_practica/assets/icon/servicios/5_servicios_juridicos.jpg" alt="Venta">
-            <h3>Servicios jurídicos</h3>
-            <p>Ayuda legal experta para todos los artículos relacionados con la propiedad.</p>
-        </div>
-
-        <div class="info-1">
-            <img src="/2_pagina_de_practica/assets/icon/servicios/6_sesion_de_fotos.jpg" alt="Venta">
-            <h3>Sesión de fotos</h3>
-            <p>Preparamos la presentación visual de tu propiedad.</p>
-        </div>
-    </section>
-
-    <section class="nosotros">
-        <div class="nosotros-info container">
-            <div class="nosotros-img">
-                <img src="/2_pagina_de_practica/assets/images/1_inicio/2_quienes_somos.JPG" alt="2_quienes_somos">
+    <main>
+        <section id="quienes-somos" class="nosotros container">
+            <div class="nosotros-info">
+                <div class="nosotros-img">
+                    <img src="/proyecto_integrador_untref/assets/images/quienes_somos.jpg" alt="quienes somos">
+                </div>
+                <div class="nosotros-txt">
+                    <span class="aclaracion">QUIÉNES SOMOS</span>
+                    <h2>¿Te gustaría cumplir el deseo de vivir en la casa que soñaste?</h2>
+                    <p>Daniel Ortelli Inmobiliaria es una inmobiliaria de Chivilcoy compuesta por un equipo de trabajo especializado para acompañar la búsqueda del inmueble que estas deseando.</p>
+                    <p>Con 25 años de experiencia en el asesoramiento inmobiliario, realizamos nuestro trabajo con la misma pasión de siempre al momento de escuchar a nuestros clientes y trabajar juntos para acompañarlos a elegir su lugar.</p>
+                    <!-- <a href="" class="boton">Más acerca de nosotros</a> -->
+                </div>
             </div>
-    
+        </section>
+
+        <section id="tasaciones" class="nosotros container">
             <div class="nosotros-txt">
-                <span class="aclaracion">QUIÉNES SOMOS</span>
-                <h2>¿Te gustaría cumplir el deseo de vivir en la casa que soñaste?</h2>
-                <p>Daniel Ortelli Inmobiliaria es una inmobiliaria de Chivilcoy compuesta por un equipo de trabajo especializado para acompañar la búsqueda del inmueble que estas deseando.</p>
-                <p>Con 25 años de experiencia en el asesoramiento inmobiliario, realizamos nuestro trabajo con la misma pasión de siempre al momento de escuchar a nuestros clientes y trabajar juntos para acompañarlos a elegir su lugar.</p>
-                <a href="" class="boton">Más acerca de nosotros</a>
+                <span class="aclaracion">TASACIONES</span>
+                <h2>Póngase en contacto para pedir una tasación de su propiedad</h2>
+                <p>Realizamos un servicio profesional de tasaciones de propiedades a través de profesionales matriculados y experimentados en el tema.</p>
+                <p>Nos comunicaremos con usted para más detalles de la propiedad y establecer una fecha para realizar la tasación y asesorar la transacción.</p>
+                <!-- <a href="" class="boton">Más acerca de nosotros</a> -->
             </div>
-        </div>
-
-    </section>
-
-    <main class="products container">
-        <span class="aclaracion">PROPIEDADES</span>
-        <h2>Lo nuevo en Alquiler</h2>
-
-        <div class="product-info">
-
-            <div class="product">
-                <img src="/2_pagina_de_practica/assets/images/1_inicio/lo_nuevo_en_alquiler_propiedad1.jpg" alt="propiedad1">
-                <h3>CASA GRAL. PAZ N° 940</h3>
-                <h4>$45.000</h4>
+            <div class="nosotros-info">
+                <div class="nosotros-img">
+                    <img src="/proyecto_integrador_untref/assets/images/tasaciones.jpg" alt="tasaciones">
+                </div>
             </div>
+        </section>
 
-            <div class="product">
-                <img src="/2_pagina_de_practica/assets/images/1_inicio/lo_nuevo_en_alquiler_propiedad2.jpg" alt="propiedad1">
-                <h3>LOCAL ALVEAR 10</h3>
-                <h4>$32.000</h4>
+        <section id="propiedades" class="products container">
+            <span class="aclaracion">PROPIEDADES</span>
+            <h2>Lo nuevo en Alquiler</h2>
+    
+            <div class="product-info">
+                <div class="product">
+                    <img src="/proyecto_integrador_untref/assets/images/casa_barrio_la_cristina.jpeg" alt="Casa Barrio La Cristina">
+                    <h3>CASA BARRIO LA CRISTINA</h3>
+                    <h4>$65.000</h4>
+                    <p><b>2</b> dormitorios | <b>2</b> baños</p>
+                </div>
+    
+                <div class="product">
+                    <img src="/proyecto_integrador_untref/assets/images/casa_ayacucho_341.jpg" alt="Casa Ayacucho 341">
+                    <h3>CASA AYACUCHO 341</h3>
+                    <h4>$72.000</h4>
+                    <p><b>3</b> dormitorios | <b>2</b> baños</p>
+                </div>
+    
+                <div class="product">
+                    <img src="/proyecto_integrador_untref/assets/images/departamento_av_guemes_247.jpg" alt="Departamento Av. Guemes 247">
+                    <h3>DEPARTAMENTO AV. GÜEMES 247</h3>
+                    <h4>$38.000</h4>
+                    <p><b>1</b> dormitorio | <b>1</b> baño</p>
+                </div>
             </div>
+        </section>
 
-            <div class="product">
-                <img src="/2_pagina_de_practica/assets/images/1_inicio/lo_nuevo_en_alquiler_propiedad3.jpg" alt="propiedad1">
-                <h3>LOCAL AV. CEBALLOS 253</h3>
-                <h4>$35.000</h4>
-            </div>
-        </div>
+        <section id="servicios" class="servicios">
+            <span class="aclaracion">SERVICIOS</span>
+            <h2 class="subtitulos-de-secciones">Nuestros servicios inmobiliarios destacados</h2>
+
+            <article class="info container">
+                <div class="info-1">
+                    <img src="/proyecto_integrador_untref/assets/icon/1_venta.jpg" alt="Venta">
+                    <h3>Venta</h3>
+                    <p>Vendemos tu inmueble al mejor valor del mercado.</p>
+                </div>
         
+                <div class="info-1">
+                    <img src="/proyecto_integrador_untref/assets/icon/2_alquiler.jpg" alt="Alquiler">
+                    <h3>Alquiler</h3>
+                    <p>Alquilamos inmuebles y asesoramos a las partes según la ley vigente.</p>
+                </div>
+        
+                <div class="info-1">
+                    <img src="/proyecto_integrador_untref/assets/icon/3_permuta.jpg" alt="Permuta">
+                    <h3>Permuta</h3>
+                    <p>Acordamos entre las partes para el intercambio para el intercambio de propiedades.</p>
+                </div>
+        
+                <div class="info-1">
+                    <img src="/proyecto_integrador_untref/assets/icon/4_tasaciones.jpg" alt="Tasaciones">
+                    <h3>Tasaciones</h3>
+                    <p>Servicio profesional de tasación de inmuebles urbanos y rurales.</p>
+                </div>
+                
+                <div class="info-1">
+                    <img src="/proyecto_integrador_untref/assets/icon/5_servicios_juridicos.jpg" alt="Servicios jurídicos">
+                    <h3>Servicios jurídicos</h3>
+                    <p>Ayuda legal experta para todos los artículos relacionados con la propiedad.</p>
+                </div>
+        
+                <div class="info-1">
+                    <img src="/proyecto_integrador_untref/assets/icon/6_sesion_de_fotos.jpg" alt="Sesión de fotos">
+                    <h3>Sesión de fotos</h3>
+                    <p>Preparamos la presentación visual de tu propiedad.</p>
+                </div>
+            </article>
+        </section>
     </main>
 
     <footer class="footer">
         <div class="footer-links container">
             <div class="link">
-                
-                <a class="logo"><img src="/2_pagina_de_practica/assets/images/favicon.png" alt="Favicon" width="80px"></a> 
+                <h3>Redes sociales</h3>
                 <div class="socials">
-                    <!-- <img src="/2_pagina_de_practica/assets/images/footer/s1.svg" alt="Facebook">
-                    <img src="/2_pagina_de_practica/assets/images/footer/s4.svg" alt="Instagram"> -->
+                    <a href="https://www.facebook.com/danielortelliinmobiliariaventas" target="_blank"><img src="/proyecto_integrador_untref/assets/icon/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/danielortelli_inmobiliaria/" target="_blank"><img src="/proyecto_integrador_untref/assets/icon/instagram.png" alt="Instagram"></a>
                 </div>
+            </div>
+
+            <div class="link">
+                <h3>Daniel Ortelli Inmobiliaria</h3>
                 <p class="footer-descripcion">Queremos acompañarte como Corredores Inmobiliarios a intermediar de manera eficaz y segura para concretar juntos la elección del inmueble.</p>
             </div>
 
@@ -140,23 +161,6 @@
                     <li><p>(02346) 428777 | (02346) 517322</p></li>
                     <li><p>danielortelli@yahoo.com.ar</p></li>
                 </ul>
-            </div>
-    
-            <div class="link">
-
-                <h3>Categorías mas buscadas</h3>
-                <ul>
-                    <li><p>Casas en venta</p></li>
-                    <li><p>Departamentos en venta</p></li>
-                    <li><p>Casas en alquiler</p></li>
-                    <li><p>Departamentos en alquiler</p></li>
-                </ul>
-            </div>
-        </div>
-        <div class="copyright-fondo">
-            <div class="copyright container">
-                <p>Copyright © 2022 Daniel Ortelli Inmobiliaria</p>
-                <p>Diseño por Tomás Ortelli</p>
             </div>
         </div>
     </footer>

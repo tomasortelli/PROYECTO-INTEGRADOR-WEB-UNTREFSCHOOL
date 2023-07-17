@@ -17,7 +17,6 @@ body {
     margin: 0 auto;
 }
 
-
 .header {
     display: flex;
     position: relative;
@@ -55,7 +54,6 @@ body {
     color: white;
 }
 
-
 #menu {
     display: none;
 }
@@ -68,6 +66,49 @@ body {
     cursor: pointer;
     display: none;
 }
+
+
+
+.header-contacto {
+    display: flex;
+    position: relative;
+    background-color: #065078;
+}
+
+.menu-contacto {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    margin-top: 1rem;
+}
+
+.menu-contacto .navbar ul li {
+    position: relative;
+    float: left;
+    margin: 2rem;
+}
+
+.menu-contacto .navbar ul li a {
+    font-size: 18px;
+    /* padding: 10px; */
+    display: block;
+    font-weight: 600;
+    color: white;
+}
+
+.menu-icono-contacto {
+    width: 25px;
+}
+
+.menu-contacto label {
+    cursor: pointer;
+    display: none;
+}
+
 
 .bg {
     position: absolute;
@@ -128,16 +169,25 @@ body {
     background-color: #03496e; 
 }
 
-/* .header-img {
-    width: 50%;
+.subtitulos-de-secciones {
+    text-align: center;
 }
 
-.header-img img {
-    width: 650px;
-} */
+
+/* SERVICIOS */
+
+.servicios {
+    padding: 80px 0;
+    text-align: center;
+    padding-bottom: 5rem;
+    background-color: #e4ebee;
+}
+
+.servicios h2 {
+    margin-bottom: 40px;
+}
 
 .info {
-    /* padding: 100px; */
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -149,10 +199,11 @@ body {
     width: 380px;
     padding: 40px;
     padding-top: 4rem;
-    padding-bottom: 8rem;
+    padding-bottom: 5rem;
     text-align: center;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
+    background-color: white;
 }
 
 .info-1 img {
@@ -169,16 +220,11 @@ body {
 }
 
 
+/* QUIENES SOMOS */
+
 .nosotros {
     position: relative;
-}
-
-.bg-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 400px;
-    z-index: -1;
+    padding-bottom: 5rem;
 }
 
 .nosotros-info {
@@ -218,9 +264,13 @@ body {
     margin-bottom: 50px;
 }
 
+
+/* PROPIEDADES */
+
 .products {
     padding: 80px 0;
     text-align: center;
+    padding-bottom: 5rem;
 }
 
 .products h2 {
@@ -256,22 +306,23 @@ body {
 }
 
 .product h4 {
-    font-size: 17px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 600;
     color: #03496e;
     margin-top: 10px;
     padding: 0 15px;
 }
 
 .product p {
-    padding: 30px;
+    color: #7c8285;
+    font-size: 16px;
+    padding-top: 15px;
+    padding-left: 18px;
     margin: 0;
 }
 
-hr {
-    border: 1px solid #eee;
-}
 
+/* FOOTER */
 
 .footer {
     padding: 50px 0;
@@ -286,7 +337,7 @@ hr {
 
 .footer-descripcion {
     width: 400px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     color: #e6e6e6;
 }
@@ -306,8 +357,14 @@ hr {
 
 .socials img {
     margin-right: 15px;
-    margin-top: 15px;
     margin-bottom: 15px;
+    opacity: 50%;
+    width: 30px;
+}
+
+.socials img:hover {
+    opacity: 100%;
+
 }
 
 .link ul li a {
@@ -323,21 +380,78 @@ hr {
     gap: 30px;
 }
 
-.copyright {
+
+
+/* CONTACTO */
+
+.contacto-fondo {
+    background-color: #e4ebee;
+    padding-bottom: 6rem;
+}
+
+.contacto {
     display: flex;
-    justify-content: space-between; 
-    padding-top: 1rem;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 80px;
+    height: 80vh;
+    padding-top: 7rem;
 }
 
-.copyright p {
-    color: white;
-    font-size: 14px;
-    font-weight: 300;
-}
+.colorful-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #ffffff;
+    border-radius: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+    padding-top: 0.1rem;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.3rem;
+    border: solid 1px #5c727d42;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  textarea.form-input {
+    height: 100px;
+  }
+  
+  .form-button {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    background-color: #08608f;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  .form-button:hover {
+    background-color: #03496e;
+  }
 
-.copyright-fondo {
-    background-color: #013450;
-}
+
 
 
 @media (max-width: 991px) {
