@@ -27,7 +27,7 @@ h2 {
     color: #065078;
     font-size: 2.125em;
     font-weight: 800;
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 h3 {
@@ -40,7 +40,7 @@ p{
     color: #5c727d;
     font-size: 1.125rem;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;
 }
 
 .aclaracion {
@@ -48,7 +48,6 @@ p{
     font-size: 0.875rem;
     font-weight: 400;
 }
-
 
 .logo {
     text-align: left;
@@ -79,7 +78,6 @@ p{
 }
 
 /* HEADER */
-
 .header {
     display: flex;
     position: relative;
@@ -105,7 +103,6 @@ p{
 
 .menu .navbar ul li a {
     font-size: 1.125em;
-    /* padding: 10px; */
     display: block;
     font-weight: 600;
     color: white;
@@ -143,6 +140,7 @@ p{
     justify-content: center;
     z-index: 1000;
     margin-top: 1rem;
+    width: 100%;
 }
 
 .menu-contacto .navbar ul li {
@@ -208,9 +206,7 @@ p{
     padding: 0 6.25em;
 }
 
-
 /* QUIENES SOMOS */
-
 .nosotros {
     position: relative;
     padding-top: 6em;
@@ -260,9 +256,7 @@ p{
     margin-bottom: 3.125em;
 }
 
-
 /* PROPIEDADES */
-
 .products {
     padding-top: 12em;
     padding-bottom: 12em;
@@ -317,9 +311,7 @@ p{
     margin: 0;
 }
 
-
 /* SERVICIOS */
-
 .servicios {
     padding: 5em 0;
     text-align: center;
@@ -364,9 +356,7 @@ p{
     padding: 0.625em;
 }
 
-
 /* FOOTER */
-
 .footer {
     padding: 3.125em 0;
     background-color:#065078;
@@ -417,27 +407,7 @@ p{
     color: white;
 }
 
-
 /* CONTACTO */
-
-/* .contacto-fondo {
-    background-color: #e4ebee;
-    padding-bottom: 6rem;
-} */
-
-/* .contacto {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    column-gap: 80px;
-    height: 80vh;
-    padding-top: 7rem;
-} */
-
-/* .contacto { 
-    width: 60%;
-} */
-
 .colorful-form {
     width: 31.25em;
     margin: 0 auto;
@@ -491,7 +461,6 @@ p{
     background-color: #03496e;
   }
 
-
 @media screen and (max-width: 1060px) {
 
     body {
@@ -527,8 +496,8 @@ p{
     }
 
     .menu .navbar ul li a:hover {
-        color: #feba01;
-        background-color: #065078;
+        color: #065078;
+        font-weight: 700;
     }
 
     #menu:checked ~ .navbar {
@@ -546,7 +515,6 @@ p{
     }
 
     /* MENU CONTACTO */
-
     .menu-contacto {
         padding: 30px;
         justify-content: space-between;
@@ -575,15 +543,12 @@ p{
     }
 
     .menu-contacto .navbar ul li a:hover {
-        color: #feba01;
-        background-color: #065078;
+        color: #065078;
+        font-weight: 700;
     }
 
-    
     /* QUIENES SOMOS */
-
     .nosotros {
-        /* padding: 2rem; */
         justify-content: space-between;
     }
     
@@ -603,13 +568,17 @@ p{
     }
 }
 
-
 @media screen and (max-width: 768px) {
 
     body {
         font-size: 12px;
     }
     
+    .header-txt p {
+        margin-bottom: 10em;
+        padding: 0 6.25em;
+    }
+
     /* QUIENES SOMOS */
     .nosotros {
         padding-left: 2em;
@@ -638,13 +607,13 @@ p{
 
     /* LO NUEVO EN ALQUILER */
     .products {
-        padding: 30px;
+        padding: 1.875rem;
         text-align: center;
     }
 
     .products p {
         padding: 0;
-        margin-bottom: 40px;
+        margin-bottom: 2.5rem;
     }
 
     .product-info {
@@ -652,10 +621,44 @@ p{
     }
 
     .product p {
-        padding: 30px;
+        padding: 1.875rem;
     }
+
+    /* SERVICIOS */
+    .subtitulos-de-secciones {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    /* FORMULARIO DE CONTACTO */
+    .colorful-form {
+    width: 95%;
+    text-align: left;
+    margin-left: -1em;
+  }
 }
 
+@media screen and (max-width: 530px) {
+
+    /* HEADER */
+    .header-txt {
+        margin-bottom: 10em;
+    }
+        
+    .header-txt p {
+        display: none;
+    }
+    
+    /* QUIENES SOMOS */
+    .nosotros-img {
+        width: 100%;
+    }
+    
+    .nosotros-img img {
+        width: 90%;
+        margin-right: 3em;
+    }
+}
 
 @media screen and (max-width: 320px) {
     
@@ -663,49 +666,3 @@ p{
         font-size: 12px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* h1 {
-    font-size: 50px;
-    font-weight: 600;
-}
-
-h2 {
-    color: #065078;
-    font-size: 34px;
-    font-weight: 800;
-    margin-top: 20px;
-}
-
-h3 {
-    color: #065078;
-    font-size: 22px;
-    font-family: 700;
-}
-
-p{
-    color: #5c727d;
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 25px;
-}
-
-.aclaracion {
-    color: #81b0c1;
-    font-size: 14px;
-    font-weight: 400;
-} */
